@@ -1,8 +1,0 @@
-Utils
-=====
-
-
-link:{url}/pages/utils/templates[templates]
-
-link:{url}/pages/utils/templates/vimtemplates[templates/vimtemplates]
-
