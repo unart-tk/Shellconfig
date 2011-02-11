@@ -1,5 +1,4 @@
 alias ..='cd ..'
-alias ls='ls -GF'
 alias lss='ls -GathorF'
 
 alias sl='ls'
