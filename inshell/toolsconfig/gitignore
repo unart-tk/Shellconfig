@@ -1,0 +1,17 @@
+*.obj
+*.lib
+*.so
+*.swp
+*.pyc
+*.o
+*.cmo
+*.cma
+*.cmi
+*.cmxa
+*.cmx
+build/
+.svn
+*.gz
+*.zip
+*.bz
+*.bz2

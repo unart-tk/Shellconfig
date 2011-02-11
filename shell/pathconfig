@@ -1,0 +1,27 @@
+
+
+# additional stuff is in ~/bin/tools/ ~/bin/utils/ etc.
+
+bin=$HOME/bin
+
+PATH=$PATH:$bin/utils:$bin/scripts/bin:$bin/tools/bin:$bin/tools/bin:$myaliases/sw:$bin/opt/bin
+
+
+# languages
+
+SCALA_HOME=$HOME/usr/local/scala
+PATH=$PATH:SCALA_HOME/bin
+
+PATH=$PATH:$HOME/usr/local/luajit/bin
+PATH=$PA$HOME/usr/local/elastic/bin
+
+# the $HOME/usr
+
+PATH=$PATH:$HOME/usr/local/bin:$HOME/usr/share/bin
+
+
+
+
+
+export $PATH
+
