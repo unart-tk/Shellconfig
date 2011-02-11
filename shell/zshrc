@@ -11,16 +11,18 @@ zmodload -a zsh/stat stat
 zmodload -a zsh/zpty zpty
 zmodload -a zsh/zprof zprof
 
-if [ -f $HOME/.shellvars ]; then
-    source $HOME/.shellvars
-fi
 
+if [ -f $HOME/.pathconf ]; then
+    source $HOME/.pathconf
+fi
+if [ -f $HOME/.envconf ]; then
+    source $HOME/.envconf
+fi
 if [ -f $HOME/.aliases ]; then
     source $HOME/.aliases
 fi
 
 
-EDITOR='vim'
 autoload colors zsh/terminfo
 count=
 if [[ "$terminfo[colors]" -ge 8 ]]; then

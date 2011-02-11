@@ -1,0 +1,9 @@
+
+export EDITOR=vim
+
+# this is for the gnupg vim plugin
+# i hope it doesn't make trouble ...
+export GPG_TTY=`tty`
+
+
+export HAXE_LIBRARY_PATH=/home/ben/usr/local/haxe/std:.

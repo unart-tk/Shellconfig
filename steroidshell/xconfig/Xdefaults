@@ -1,0 +1,108 @@
+urxvt*termName: rxvt-256color
+#URxvt*termName:rxvt
+
+# transparency - true or false (default)
+URxvt*transparent:false
+
+# tint with any color; i.e., blue, red, tomato4, olivedrab2, etc.
+#   some nice listings are at:
+#     http://www.nisrv.com/modules.php?name=Hex_Colors
+#     http://www.htmlgoodies.com/tutorials/colors/article.php/3478921
+#URxvt*tintColor:black
+
+# shading - 0 to 99 darkens, 101 to 200 lightens.
+#   Don't use with tintColor; use a darker or lighter color instead.
+#URxvt*shading:40
+urxvt*foreground: #f2f2f2
+urxvt*background: #101010
+
+! Normal
+! color0    black
+! color1    red
+! color2    green
+! color3    yellow
+! color4    blue
+! color5    purple
+! color6    cyan
+! color7    white
+
+urxvt*color0:    #6c6c6c
+urxvt*color1:    #e9897c
+urxvt*color2:    #b6e77d
+urxvt*color3:    #ecebbe
+urxvt*color4:    #a9cdeb
+urxvt*color5:    #ea96eb
+urxvt*color6:    #c9caec
+urxvt*color7:    #f2f2f2
+
+! Light
+! color8    black
+! color9    red
+! color10    green
+! color11    yellow
+! color12    blue
+! color13    purple
+! color14    cyan
+! color15    white
+
+urxvt*color8:    #747474
+urxvt*color9:    #f99286
+urxvt*color10:    #c3f786
+urxvt*color11:    #fcfbcc
+urxvt*color12:    #b6defb
+urxvt*color13:    #fba1fb
+urxvt*color14:    #d7d9fc
+urxvt*color15:    #e2e2e2
+# scrollback buffer lines - 65535 is max (64 is default)
+URxvt*saveLines:12000
+
+# font color (default is black)
+# URxvt*foreground:White
+
+# background color (prior to tinting) (default is white)
+# URxvt*background:Gray
+
+# xft fonts - anti-aliased xft font setup is nice, but can be choppy
+URxvt*font: xft:Bitstream Vera Sans Mono:pixelsize=18
+
+# traditional fonts - a more traditional font setup in lieu of xft
+#URxvt*font:-*-courier-medium-r-normal-*-*-140-*-*-*-*-iso8859-1
+#URxvt*boldFont:-*-courier-bold-r-normal-*-*-140-*-*-*-*-iso8859-1
+
+# Replace blue folder colors with a lighter shade for clarity. To
+# set colored folders and files within urxvt, xterm, and aterm, add
+# the following line to your ~/.bashrc ($HOME/.bashrc) file under
+# the heading "# User specific aliases and functions":
+#   alias ls="ls -h --color=auto"
+#URxvt*color4:RoyalBlue
+#URxvt*color12:RoyalBlue
+
+## geometry and font
+#URxvt*geometry: 40×50
+#URxvt*font: xft:Terminus:pixelsize=20
+
+
+
+#URxvt*geometry:84x24
+
+URxvt*borderLess:false
+
+
+# scrollbar - true (default)
+URxvt*scrollBar:false
+
+# scrollbar position - left=false (default)
+URxvt*scrollBar_right:false
+
+# scrollbar style - rxvt (default)
+URxvt*scrollstyle:rxvt
+
+
+
+
+##
+## These 3 lines make links clickable
+##
+URxvt.urlLauncher: firefox
+URxvt.matcher.button: 1
+URxvt.perl-ext-common: matcher,readline

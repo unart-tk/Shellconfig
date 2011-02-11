@@ -1,0 +1,6 @@
+#source $HOME/.byobu/profile
+#
+#
+escape ^gg
+
+shell "/usr/bin/zsh"
