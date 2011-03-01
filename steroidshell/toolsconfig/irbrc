@@ -1,5 +1,0 @@
-require 'bond'
-require 'sketches'
-
-Sketches.config :editor => 'vim'
-Bond.start

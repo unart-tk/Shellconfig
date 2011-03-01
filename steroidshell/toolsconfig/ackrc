@@ -1,6 +1,0 @@
---color
---context=1
---follow
---group
---sort-files
---type-add=ruby=.haml,.sass,.scss,.yml

@@ -1,4 +1,0 @@
-(if
-(contains(window_name) "GVIM")
-(fullscreen)
-)
