@@ -1,0 +1,8 @@
+alias reload="source $HOME/.zshrc"
+alias ..='cd ..'
+alias lss='ls -GathorF'
+
+alias sl='ls'
+alias sls='ls'
+alias lsl='ls'
+alias xclone="git clone `xclip -o`"

@@ -1,0 +1,15 @@
+# .profile
+# ========
+#
+# ben, untar.org
+
+
+# /usr PATH
+PATH="/sbin:/bin:/usr/bin:/usr/sbin:/usr/local/bin"
+
+
+# /opt
+export PATH="$PATH:/opt/bin:/opt/local/bin"
+
+
+

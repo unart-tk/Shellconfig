@@ -1,0 +1,4 @@
+(if
+(contains(window_name) "urxvt")
+(fullscreen)
+)

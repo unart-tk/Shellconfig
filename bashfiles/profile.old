@@ -1,0 +1,62 @@
+# Dotfles - Profile
+# ==================
+#
+#     (c) Ben <b@untar.org>
+#
+
+
+# /usr PATH
+PATH="/sbin:/bin:/usr/bin:/usr/sbin:/usr/local/bin"
+
+
+# /opt
+export PATH="$PATH:/opt/bin:/opt/local/bin"
+
+
+
+# Ocaml
+# -----
+#export CAML_LD_LIBRARY_PATH="/usr/lib/ocaml/"
+
+
+# Go
+# --
+#export GOROOT="$HOME/usr/local/go"
+#export GOBIN="$HOME/usr/local/bin"
+#export GOOS='linux'
+#export GOARCH='386'
+
+# Libraries
+# ---------
+# Make sure pkg-config can find self-compiled software
+# and libraries (installed to ~/usr)
+
+#PKG_CONFIG_PATH=$PKG_CONFIG_PATH:$HOME/usr/lib/pkgconfig:$MONO_HOME/lib/pkgconfig
+#export PKG_CONFIG_PATH
+ 
+ 
+# Java
+# ----
+# Java;s CLASSPATH customization
+#CLASSPATH=~/usr/local/yeti:~/usr/local/yeti/yeti.jar
+
+#CLASSPATH=/usr/share/java/commons-cli.jar
+#export CLASSPATH
+
+#if [ "$platform" = 'darwin' ]; then
+	#JAVA_HOME="/Library/Java/Home"
+#else
+	#JAVA_HOME="/usr/lib/jvm/java-6-openjdk"
+#fi
+#export JAVA_HOME
+
+JDK_HOME="/usr/lib/jvm/java-6-openjdk"
+#export JDK_HOME
+
+
+# mac os x /opt
+#export MYSQL_CONNECTOR_JAR="$HOME/usr/lib/mysql-connector-java-5.1.10-bin.jar"
+
+
+
+

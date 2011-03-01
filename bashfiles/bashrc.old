@@ -1,0 +1,123 @@
+# .bashrc
+# =======
+#
+# ben, untar.org
+#
+
+# Reference: Influenced by http://stefaanlippens.net/bashrc_and_others
+
+
+platform='unknown'
+unamestr=$(uname)
+platform=''
+
+if [ "$unamestr" = "Darwin" ]; then
+	platform='darwin'
+fi
+
+
+if [ -f $HOME/.shellvars ]; then
+    . $HOME/.shellvars
+fi
+if [ -f $HOME/.aliases ]; then
+    . $HOME/.aliases
+fi
+
+
+# Enable programmable completion features.
+if [ -f /etc/bash_completion ]; then
+    . /etc/bash_completion
+fi
+ 
+
+# Set the PS1 prompt (with colors).
+# Based on http://www-128.ibm.com/developerworks/linux/library/l-tip-prompt/
+# And http://networking.ringofsaturn.com/Unix/Bash-prompts.php .
+PS1="\[\e[36;1m\]\h:\[\e[32;1m\]\w\n>$ \[\e[0m\]"
+ 
+
+
+
+# control bash history
+
+# Avoid succesive duplicates in the bash command history.
+export HISTIGNORE="pwd:ls:ls -ltr:cd:echo"
+export HISTCONTROL="ignoredups:ignorespace"
+# Append commands to the bash command history file (~/.bash_history)
+# instead of overwriting it.
+shopt -s histappend
+ 
+# Append commands to the history every time a prompt is shown,
+# instead of after closing the session.
+PROMPT_COMMAND='history -a'
+
+# view man in vim (view)
+#export PAGER="/bin/sh -c \"col -b | view -c 'set ft=man nomod nolist' -c 'set nonu' -\""
+
+# things related to interactive bash usage
+# influenced by http://stefaanlippens.net/bashrc_and_others
+export TERM=xterm-256color
+ 
+
+# this is for the gnupg vim plugin
+# i hope it doesn't make trouble ...
+export GPG_TTY=`tty`
+
+
+
+# next lets set some enviromental/shell pref stuff up
+# setopt NOHUP
+#setopt NOTIFY
+#setopt NO_FLOW_CONTROL
+#setopt INC_APPEND_HISTORY SHARE_HISTORY
+#setopt APPEND_HISTORY
+# setopt AUTO_LIST		# these two should be turned off
+# setopt AUTO_REMOVE_SLASH
+# setopt AUTO_RESUME		# tries to resume command of same name
+#unsetopt BG_NICE		# do NOT nice bg commands
+#setopt CORRECT			# command CORRECTION
+#setopt EXTENDED_HISTORY		# puts timestamps in the history
+# setopt HASH_CMDS		# turns on hashing
+#
+#setopt MENUCOMPLETE
+#setopt ALL_EXPORT
+
+# Set/unset  shell options
+#setopt   notify globdots correct pushdtohome cdablevars
+#setopt   correctall autocd recexact longlistjobs
+#setopt   autoresume histignoredups pushdsilent 
+#setopt   autopushd pushdminus extendedglob rcquotes mailwarning
+#unsetopt bgnice autoparamslash
+
+#setopt autolist
+#setopt noautomenu
+#unsetopt menucomplete
+
+
+
+#TZ="America/New_York"
+#HISTFILE=$HOME/.zhistory
+#HISTFILE=$HOME/.zhistory
+#HISTSIZE=1000
+#SAVEHIST=1000
+#HOSTNAME="`hostname`"
+#PAGER='less'
+#
+
+#LANGUAGE=
+#LC_ALL='en_US.UTF-8'
+#LANG='en_US.UTF-8'
+#LC_CTYPE=C
+#
+#SSH_TTY=
+#if [ $SSH_TTY ]; then
+#  MUTT_EDITOR=vim
+#else
+#  MUTT_EDITOR=emacsclient.emacs-snapshot
+#fi
+
+#unsetopt ALL_EXPORT
+ 
+
+
+

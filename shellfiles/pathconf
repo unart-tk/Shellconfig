@@ -1,0 +1,25 @@
+unset PATH
+
+# /usr/...
+PATH=/bin:/sbin:/usr/bin:/usr/local/bin:/usr/sbin:/usr/local/sbin
+
+# ~/usr/...
+
+PATH=$PATH:$HOME/usr/local/bin:$HOME/usr/share/bin:$HOME/usr/local/pfff/bin
+
+#  ~/bin
+BIN=$HOME/bin
+PATH=$PATH:$BIN/sw/bin:$BIN/utils/bin:$BIN/myscripts/bin
+
+
+
+
+# language HOMES
+
+SCALA_HOME=$HOME/usr/local/scala
+
+PATH=$PATH:$SCALA_HOME/bin
+
+#
+export PATH
+

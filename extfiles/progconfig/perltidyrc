@@ -1,0 +1,35 @@
+# inspirations from:
+# - http://perltidy.sourceforge.net/tutorial.htm
+# - https://github.com/openmelody/melody/blob/master/.perltidyrc
+# - http://perltidy.sourceforge.net/stylekey.htm
+#
+
+
+
+-i=4    # indent level is 4 cols
+-nsbl # the subs opening brace on the right
+
+--nocuddled-else
+
+
+# Closing tokens (braces/brackets/parens) in a multi-line block or statement
+# should be aligned with the start of the statement, not the opening token
+--closing-token-indentation=0
+
+--backup-and-modify-in-place
+--warning-output    # Show warnings
+
+
+
+
+
+# The next two determine vertical spacing after opening tokens and before closing tokens
+# %romanNumerals = (
+# one => 'I',
+# two => 'II',
+# three => 'III',
+# four => 'IV',
+# );
+
+--vertical-tightness=0
+--vertical-tightness-closing=0

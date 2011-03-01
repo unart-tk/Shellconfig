@@ -1,0 +1,19 @@
+import ipy_vimserver
+ipy_vimserver.setup("mysess")
+vim
+y
+ls
+exit()
+y
+class Cursor
+class Cursor:
+    def __init__(self, ** kdws):
+        self.__dict__.update(kwds)
+mystruct = Cursor(file='bli', dir='blo')
+mystruct = Cursor(file='bli', dir='blo')
+x = Cursor('foo':'bar')
+x = Cursor({'foo':'bar'})
+y
+import glob
+d
+y
